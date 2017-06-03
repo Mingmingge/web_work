@@ -1,17 +1,18 @@
 @charset "utf-8";
 
-h1,h2,h3,h4,h5,h6,img,p,ul,li,dl,dt,dd,ol,form,span,input,a,div{
+h1,h2,h3,h4,h5,h6{
     margin:0px;
     padding:0px;
     font-style:normal;
     border:0;
+    color: black;
 }
-body{
+/*body{
     font-family:"宋体";
     font-size:12px;
     margin:0 auto;
     background:#fff;
-}
+}*/
 img{
     border:0px;
     border:none;
@@ -21,10 +22,10 @@ ul,li{
 }
 a{
     text-decoration:none;
-    color:#656464;
+    color:black;
 }
 a:hover{
-    color:#095d40;
+    color:black;
 }
 /*网站头部*/
 .header{
@@ -46,14 +47,14 @@ a:hover{
 }
 .top_link{
     float:right;
-    width:511px;
+    width:600px;
     padding-top:45px;
     height:26px;
     font-family:"微软雅黑";
 }
 .sfdr{
     float:left;
-    width:316px;
+    width:350px;
     overflow:hidden;
     height:26px;
 }
@@ -102,9 +103,9 @@ a:hover{
     background:url(d_bg4.jpg) no-repeat left top;
 }
 .ya{
-    padding-left:10px;
+    padding-left:20px;
     float:left;
-    width:185px;
+    width:250px;
     height:26px;
     line-height:26px;
 }
@@ -117,7 +118,7 @@ a:hover{
 
 /*导航*/
 .nav{
-    width:810px;
+    width:900px;
     height:40px;
     float:left;
     position:relative;
@@ -173,13 +174,15 @@ a:hover{
 /*搜索*/
 .sea_box{
     position:absolute;
-    right:0; bottom:12px;
+    right:0; bottom:0px;
+    padding-top: 5px;
 }
 .search{
     background:url(sea_bg.jpg) no-repeat;
     width:177px;
     height:27px;
     position:relative;
+    padding-left: 20px;
 }
 .search input{
     position:absolute;
@@ -190,7 +193,7 @@ a:hover{
     border:none;
     background:none;
     left:0px;
-    top:0px;
+    top:px;
     padding-left:0px;
 }
 .search input.notxt{
@@ -270,14 +273,14 @@ a:hover{
     color:#095d40;
 }
 .news_con{
-    height:226px;
+    height:250px;
     border-bottom:1px solid #e4e4e4;
     border-top:1px solid #e4e4e4;
     padding:0 2px;
 }
 .new_box1{
-    height:180px;
-    padding:18px 17px 18px 0;
+    height:238px;
+    padding:12px 7px 8px 0;
     border-right:1px solid #e4e4e4;
     width:180px;
     overflow:hidden;
@@ -304,16 +307,16 @@ a:hover{
     background:url(li_hbg.jpg) no-repeat right 30px;
 }
 .new_box2{
-    height:180px;
-    padding:18px 17px;
+    height:238px;
+    padding:12px 7px;
     border-right:1px solid #e4e4e4;
     width:180px;
-    overflow:hidden;
+    overflow: hidden;
     float:left;
 }
 .new_box3{
-    height:180px;
-    padding:18px 0px 18px  18px;
+    height:238px;
+    padding:12px 0px 18px  18px;
     width:180px;
     overflow:hidden;
     float:left;
@@ -342,6 +345,7 @@ a:hover{
     overflow: hidden;
     margin-left: 20px;
     text-align: center;
+
 }
 .tag{
     height: 228px;
@@ -353,7 +357,7 @@ a:hover{
     height: 200px;
     float: left;
     margin-left: 300px;
-    margin-top: 30px;
+
 }
 .gg_title,.geng{
     float: left;
@@ -367,7 +371,7 @@ a:hover{
 .geng{
     width: 300px;
     overflow: hidden;
-    padding-top: 1%;
+
 }
 .ma{
     float:left;
@@ -380,11 +384,11 @@ a:hover{
     height: 200px;
     float: left;
     margin-left: 30px;
-    margin-top: 30px;
+
 }
 .bl_mei{
     margin-left: 50px;
-    margin-top: 30px;
+
 
 }
 .ta2{
@@ -445,17 +449,17 @@ a:hover{
     height:100px;
     background:#d0c5ba;
     margin:0 auto 0;
-    overflow:hidden;
+    overflow: hidden;
 }
 .footer{
     width:1000px;
-    height:76px;
+    height:100px;
     padding:12px 0;
     overflow:hidden;
     margin:0 auto;
 }
 .sfdr2{
-    width:182px;
+    width:200px;
     padding-right:2px;
     border-right:1px solid #8a8a8a;
     height:76px; overflow:hidden;
@@ -500,28 +504,32 @@ a:hover{
     background:url(a_bg8.jpg) no-repeat;
 }
 .fot_link{
-    width:168px;
-    border-right:1px solid #8a8a8a;
-    height:76px; overflow:hidden;
+    width:240px;
+
+    height:100px; overflow:hidden;
     padding-left:29px; float:left;
 }
 .fot_link a{
     display:block;
     float:left;
-    height:26px;
+    height:20px;
     line-height:26px;
     margin:8px 33px 0 3px; color:
-        #5b5a5a; *width:75px;
+        #5b5a5a; *width:200px;
 }
 .fot_link a:hover{
     color:#095d40;
 }
 .fot_logo{
-    width:79px;
-    height:64px;
-    padding:2px 42px 10px 49px;
-    border-right:1px #8a8a8a solid;
+    width:100px;
+    height:100px;
+    padding-top: 0px;
+
     float:left;
 }
+.ti_1 h4,.ti_2 h4,.ti_3 h4,.ti_4 h5,.gg_title h4,.geng h5 ,.mei_title h4,.zhuan h4,.tong_title h4{
+    color: #0f0f0f;
+}
+
 
 
