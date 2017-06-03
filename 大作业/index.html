@@ -1,295 +1,333 @@
-<!DOCTYPE html>
+<！DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>北京理工大学</title>
-    <link type="text/css" rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="index.js">
-
-    </script>
+    <link href="style_2013zzgb.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="nav_er.js"></script><!--nav 二级导航-->
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="menuli.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
-<body onload="init()">
-<div class="con">
-    <div class="head">
-        <div class="pic" style="height: 100%;width:30%;  float: left; margin-left: 10%" id="h">
-            <a href="#"> <img src="logo.jpg" style="width: 80%;height: 80%;"></a>
+<body>
+<!-------头部开始---------->
+
+<div class="header">
+    <div class="top">
+        <div class="logo">
+            <a href="#"><img src="logo.jpg" width="273" height="63" /></a>
         </div>
-        <div class="cho" style="height: 100%;width: 60%; float: left;" id="h">
-            <div class="zaixiao" id="shenfen">
-                在校生
+        <div class="top_link">
+            <div class="sfdr" id="menu1">
+                <ul>
+
+                    <li class="abg1"><a href="#">在校生</a></li>
+                    <li class="abg2"><a href="#">教职工</a></li>
+                    <li class="abg3"><a href="#">考  生</a></li>
+                    <li class="abg4"><a href="#">校  友</a></li>
+                </ul>
             </div>
-            <div class="jiaozhi" id="shenfen">
-                教职工
-            </div>
-            <div class="kaosheng" id="shenfen">
-                考&nbsp;生
-            </div>
-            <div class="xiaoyou" id="shenfen">
-                校&nbsp;友
-            </div>
-            <div class="zhongwen" id="shenfen">
-                <a href="#">中文版&nbsp; &nbsp;|</a>
-            </div>
-            <div class="english" id="shenfen">
-                <a href="#">ENGLISH&nbsp;&nbsp;|</a>
-            </div>
-            <div class="xinxi" id="shenfen">
-                <a href="#" id="red">信息公开</a>
+            <div class="ya">
+                <a href="#">中文版</a>  ｜  <a href="#" target="_self">ENGLISH</a>  ｜
+                <a href="#" target="_self" style="color: red;">信息公开</a>
             </div>
         </div>
     </div>
+    <!-------导航开始-------------------->
     <div class="nav">
-        <div class="nav_bar" id="nav_in">
-            <ul id="na_ul">
-                <li>
-                    学校概况<img src="nav_libg(1).jpg" style="height:10%"  align="center">
-                    <div id="ul_2"  style="height: 300px; z-index: 1;">
-                        <img src="li_bg(1).jpg">&nbsp;&nbsp; <a href="#">校情纵览</a>&nbsp;&nbsp;&nbsp;cec
-                        <img src="li_bg(1).jpg">&nbsp;&nbsp; <a href="#">校情纵览</a>&nbsp;&nbsp;&nbsp;
-                        <br><br>
-                        <img src="li_bg(1).jpg">&nbsp;&nbsp; <a href="#">校情纵览</a>&nbsp;&nbsp;&nbsp;
-                        <img src="li_bg(1).jpg">&nbsp;&nbsp; <a href="#">校情纵览</a>&nbsp;&nbsp;&nbsp;
-                        <br><br>
-                        <img src="li_bg(1).jpg">&nbsp;&nbsp; <a href="#">校情纵览</a>&nbsp;&nbsp;&nbsp;
-                        <img src="li_bg(1).jpg">&nbsp;&nbsp; <a href="#">校情纵览</a>&nbsp;&nbsp;&nbsp;
-                        <br><br>
-                        <img src="li_bg(1).jpg">&nbsp;&nbsp; <a href="#">校情纵览</a>&nbsp;&nbsp;&nbsp;
-                        <img src="li_bg(1).jpg">&nbsp;&nbsp; <a href="#">校情纵览</a>&nbsp;&nbsp;&nbsp;
-                        <br><br>
-                        <img src="li_bg(1).jpg">&nbsp;&nbsp; <a href="#">校情纵览</a>&nbsp;&nbsp;&nbsp;
-                        <img src="li_bg(1).jpg">&nbsp;&nbsp; <a href="#">校情纵览</a>&nbsp;&nbsp;&nbsp;
-                    </div>
-                    
-                </li>
-                <li>
-                    党群工作<span><img src="nav_libg(1).jpg" style="width: %;height:10%" align="center"> </span>
-                </li>
-                <li>
-                    人才培养<span><img src="nav_libg(1).jpg" style="height:10%" align="center"> </span>
-                </li>
-                <li>
-                    科学研究<span><img src="nav_libg(1).jpg"style="width: %;height:10%" align="center"> </span>
-                </li>
-                <li>
-                    师资队伍<span><img src="nav_libg(1).jpg" style="height:10%;" align="center"> </span>
-                </li>
-                <li>
-                    学生工作<span><img src="nav_libg(1).jpg"style="height:10%" align="center"> </span>
-                </li>
-                <li>
-                    招生就业<span><img src="nav_libg(1).jpg"style="width: %;height:10%" align="center"> </span>
-                </li>
-                <li>
-                    国际交流<span><img src="nav_libg(1).jpg"style="width: %;height:10%" align="center"> </span>
-                </li>
+        <ul>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">学校概况</a>
+                <dl>
+                    <dd><a href=#>校情纵览</a></dd>
+                    <dd><a href=#>学校章程</a></dd>
+                    <dd><a href=#>历史沿革</a></dd>
+                    <dd><a href=#>学校领导</a></dd>
+                    <dd><a href=#>机构设置</a></dd>
+                    <dd><a href=g#>数据发布</a></dd>
+                    <dd><a href=#>校园导游</a></dd>
+                    <dd><a href=#>大学文化</a></dd>
+                </dl>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">党群工作</a>
+                <dl>
+                    <dd><a href= #>党建动态</a></dd>
+                    <dd><a href=#>反腐倡廉</a></dd>
+                    <dd><a href=#>工会教代会</a></dd>
+                    <dd><a href=#>共青在线</a></dd>
+                    <dd><a href=#>学生会</a></dd>
+                    <dd><a href=h#>研究生会</a></dd>
+                    <dd><a href=#>北理社联</a></dd>
+                </dl>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">人才培养</a>
+                <dl>
+                    <dd><a href=# >本科生教育</a></dd>
+                    <dd><a href=#>研究生教育</a></dd>
+                    <dd><a href=#>留学生教育</a></dd>
+                    <dd><a href=#>国际教育</a></dd>
+                    <dd><a href=#>继续教育</a></dd>
+                    <dd><a href=#>远程教育</a></dd>
+                    <dd><a href=#>民族预科教育</a></dd>
+                    <dd><a href=#>高职教育</a></dd>
+                    <dd><a href=#>大学素质教育</a></dd>
+                    <dd><a href=#>本科生国际交流</a></dd>
+                    <dd><a href=#>实验教学示范中心</a></dd>
+                </dl>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">科学研究</a>
+                <dl>
+                    <dd><a href=#>科研管理</a></dd>
+                    <dd><a href= #>科研队伍</a></dd>
+                    <dd><a href=#>科研平台</a></dd>
+                    <dd><a href=#>科研合作</a></dd>
+                    <dd><a href=#>学术机构</a></dd>
 
-            </ul>
+                    <dd><a href=#>学科建设</a></dd>
+
+                    <dd><a href=# >学术期刊</a></dd>
+                    <dd><a href=# >学术活动</a></dd>
+                    <dd><a href=# >科技产业</a></dd>
+
+                    <dd><a href=# style="color:#FF0000">协同创新</a></dd>
+                </dl>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">师资队伍</a>
+                <dl>
+                    <dd><a href=#>两院院士</a></dd>
+                    <dd><a href=#>国家千人计划</a></dd>
+                    <dd><a href=#>长江学者</a></dd>
+                    <dd><a href=#>杰出人才</a></dd>
+                    <dd><a href=#>教学名师</a></dd>
+                    <dd><a href=#>人才招聘</a></dd>
+                    <dd><a href=# >教学促进与教师发展中心</a></dd>
+                </dl>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="gbxsgz/index.htm">学生工作</a>
+                <dl>
+                    <dd><a href=#>学工动态</a></dd>
+                    <dd><a href=#>学生党建</a></dd>
+                    <dd><a href=#>心理健康</a></dd>
+                    <dd><a href=#>学生资助</a></dd>
+                    <dd><a href=#>特色工作</a></dd>
+                </dl>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">招生就业</a>
+                <dl>
+                    <dd><a href=#><font color=red>本科生招生</font></a></dd>
+                    <dd><a href=#>研究生招生</a></dd>
+                    <dd><a href=#>毕业生就业</a></dd>
+                    <dd><a href=#>留学生招生</a></dd>
+                    <dd><a href=#>港澳台招生</a></dd>
+                    <dd><a href=#>国际教育招生</a></dd>
+                    <dd><a href=#>继续教育招生</a></dd>
+                    <dd><a href=#>远程教育招生</a></dd>
+                    <dd><a href=#>高等职业教育招生</a></dd>
+                    <dd><a href=#>珠海学院招生</a></dd>
+                    <dd><a href="#" >SQA-HND招生</a></dd>
+                </dl>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">国际交流</a>
+                <dl>
+                    <dd><a href=#>交流动态</a></dd>
+                    <dd><a href=#>工作通知</a></dd>
+                    <dd><a href=#>管理机构</a></dd>
+                    <dd><a href=# >学生交流</a></dd>
+                    <dd><a href=#>留学生中心</a></dd>
+                    <dd><a href=#>合作办学</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <!-------导航结束-------------------->
+    <div class="sea_box">
+
+        <form  name="dataForm" class="search" action="#" method="post" >
+            <input class="notxt" value="站内搜索" name="query" type="text" id="query" >
+            <input class="notxt1" name="Submit" type="submit" value="" />
+        </form>
+    </div>
+</div>
+<!-------头部结束---------->
+<!----carousel导航开始---->
+
+<div class="carousel" id="myCarousel">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="20160109092950335551.jpg" alt="First slide">
         </div>
-        <div class="reserch" id="nav_in">
-            <input type="text" value="站内搜索"id="reserch_line">
+        <div class="item">
+            <img src="20160125122421785034.jpg" alt="Second slide">
+        </div>
+        <div class="item">
+            <img src="20160205123015139106.jpg" alt="Third slide">
         </div>
     </div>
-    <div class="carousel"  style="z-index: 0">
-        <img src="img_2.jpg" style="width: 100%;height: 100%;" id="carousel_pic" onmousemove="pause()" onmouseout="restart()">
-        <img src="arrows(1).png" style="width: 100%;height: 9%;">
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel"
+       data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control right " href="#myCarousel"
+       data-slide="next">
+        <span class=" glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+<!-------------主体内容开始-------------->
+    <!----------北理新闻开始--------------->
+    <div class="bl_news">
+        <div class="news_title">
+            <h2>焦点关注<a href="#" target="_self">更多</a></h2>
+        </div>
+        <div class="news_con">
+            <div class="new_box1 con_box">
+                <a href="#">
+                    <img src="20160206124056700997.jpg" width="180" height="120" />
 
+                </a>
+                <h3 style="padding:20px 1px 0px 4px;"><a style="background:none;" href="#" target="_self">            北理工校领导春节前夕慰问部分老同志和坚守岗位....
+                </a></h3>
+
+            </div>
+            <div class="new_box2 con_box">
+                <a href="#">
+                    <img src="20160204151315262647.jpg" width="180" height="120" />
+
+                </a>
+                <h3 style="padding:20px 1px 0px 4px;"><a style="background:none;" href="#" target="_self">           团中央书记处书记罗梅一行慰问我校寒假留校师生
+                </a></h3>
+
+            </div>
+            <div class="new_box3 con_box">
+                <a href="#">
+                    <img src="20160202164349840774.jpg" width="180" height="120" />
+
+                </a>
+                <h3 style="padding:20px 1px 0px 4px;"><a style="background:none;" href="#" target="_self">            北理工召开科技工作者座谈会迎接“全国科技工作者日”
+                </a></h3>
+
+            </div>
+        </div>
+    </div>
+<div class="th_iframe" id="th_ifram">
+    <div class="iframe_title">
+        <div class="ti_1" id="ti_1" >
+            <a href="ta1.html" target="ta" onmouseover="document.getElementById('ti_1').style.backgroundColor='#0d8b60';"
+            onmouseout="document.getElementById('ti_1').style.backgroundColor='white';"><h4>北理新闻</h4></a>
+        </div>
+        <div id="ti_2" class="ti_2">
+            <a target="ta" href="ta2.html" onmouseover="document.getElementById('ti_2').style.backgroundColor='#0d8b60';"
+               onmouseout="document.getElementById('ti_2').style.backgroundColor='white';"><h4>新闻快讯</h4></a>
+        </div>
+        <div id="ti_3" class="ti_3">
+            <a href="ta3.html" target="ta" onmouseover="document.getElementById('ti_3').style.backgroundColor='#0d8b60';"
+               onmouseout="document.getElementById('ti_3').style.backgroundColor='white';">
+                <h4>科研技术</h4>
+            </a>
+        </div>
+        <div class="ti_4" id="ti_4">
+            <a href="#" target="_self"><h5>新闻网</h5></a>
+        </div>
+    </div>
+    <iframe src="ta1.html" id="ta" class="ta" name="ta" width="100%" height="225px" frameborder="0px">
+
+    </iframe>
+</div>
+
+<!----公共服务开始--------->
+<div class="gg_fu" id="gg_fu">
+    <div class="gg_title">
+        <a href="#"><h4>公共服务</h4></a>
+    </div>
+    <div class="geng">
+        </a><a href="#"><h5>更多</h5></a>
     </div>
     <br>
-    <div class="jiaodian">
-        <div class="top">
-            <b style="font-size: large;">焦点关注</b>&nbsp;&nbsp;&nbsp;更多
-        </div>
-        <div class="ta">
-            <table >
-                <tr>
-                    <td>
-                        <img src="20160206124056700997.jpg" id="img1">
-                    </td>
-                    <td>
-                        <img src="20160204151315262647.jpg">
-                    </td>
-                    <td>
-                        <img src="20160202164349840774.jpg">
-                    </td>
-                </tr>
-                <tr style="border: hidden;">
-                    <td>
-                        <a href="#">北理工校领导春节前夕慰问部分老同志和坚守岗位....</a>
-                    </td>
-                    <td>
-                        <a hre="#">北理工大学2015年十大新闻</a>
-                    </td>
-                    <td>
-                        <a href="#">团中央书记处书记罗梅一行慰问我校寒假留校师生</a>
-                    </td>
-                </tr>
+    <br>
+    <br>
+    <div class="gg_main" id="gg_main">
+        <div id="ma_1" class="ma"><a href="#"><img src="icon_01.jpg"></a> </div>
+        <div id="ma_2" class="ma"><a href="#"><img src="icon_02.jpg"></a> </div>
+        <div id="ma_3" class="ma"><a href="#"><img src="icon_03.jpg"></a> </div>
+        <div id="ma_4" class="ma"><a href="#"><img src="icon_04.jpg"></a> </div>
+        <div id="ma_5" class="ma"><a href="#"><img src="icon_05.jpg"></a> </div>
+        <div id="ma_6" class="ma"><a href="#"><img src="icon_06.jpg"></a> </div>
+        <div id="ma_7" class="ma"><a href="#"><img src="icon_07.jpg"></a> </div>
+        <div id="ma_8" class="ma"><a href="#"><img src="icon_08.jpg"></a> </div>
+    </div>
+</div>
+<div class="bl_mei" id="bl_mei" style="margin-left: 50px;">
+    <div class="mei_title" style="width: 100px">
+        <a href="ta4.html" target="ta2"><h4>媒体北理</h4></a>
+    </div>
+    <div class="zhuan">
+        <a href="ta5.html" target="ta2"><h4>专题报道</h4></a>
+    </div>
+    <iframe frameborder="0px" width="100%" height="150px" name="ta2" src="ta4.html">
 
-            </table>
-            <br>
-            <hr>
+    </iframe>
+</div>
+<div class="bl_tong">
+    <div class="tong_title">
+        <a href="#"><h4>通知公告 &nbsp;&nbsp;<span style="font-size: small"> 今日更新一条</span></h4></a>&nbsp;
+    </div>
+    <div class="tong_main">
+        <div class="d1">
+            <div class="tongzhi_bo_le" id="tongzhi_to">
+                2016<br>01-19
+            </div>
+            <div class="tongzhi_bo_ri" id="tongzhi_to">
+                关于2016年度国家项目科学基金申请...
+                <br>
+            </div>
+        </div>
+        <div class="d2">
+<hr>
+            <div class="tongzhi_bo_le" id="tongzhi_bo">
+                2016<br>01-29
+            </div>
+            <div class="tongzhi_bo_ri" id="tongzhi_bo">
+                关于2016年班车安排的同志（2016年...）
+            </div>
         </div>
     </div>
-    <div class="yaowen">
-        <div class="fa_d" id="fa_d">
-            <div class="xinwen" id="fra" onmouseover="bghuan('fra')">
-                <a href="ta1.html" target="ta"> 北理新闻</a>
-            </div>
-            <div class="kuanxun" id="fra">
-                <a href="ta2.html" target="ta">新闻快讯</a>
-            </div>
-            <div class="xueshu" id="fra"  onmouseover="bghuan('fra')" onmouseout="javascript:document.getElementById('fra').style.backgroundColor='white'";>
-                <a href="ta3.html" target="ta">科研学术</a>
-            </div>
-            <div class="wenwang" id="fra" style="font-size: 5em; text-align: left;margin-top: 2%; background-color: white;">
-                新闻网
-            </div>
-        </div>
-        <iframe width="100%" height="85%" name="ta" src="ta1.html" style="border: hidden">
+</div>
+<!-------------底部开始-------------->
+<div class="fot_wrap">
 
-        </iframe>
-
-    </div>
-    <div class="gonggong">
-        <div class="to" style="margin-left: 3%;">
-            <b style="font-size: large;">公共服务</b>&nbsp;&nbsp;&nbsp;更多
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="set" id="gong">
-            <img src="icon_01(1).jpg">
-        </div>
-        <div class="sta" id="gong">
-            <img src="icon_02.jpg">
-        </div>
-        <div class="zhu" id="gong">
-            <img src="icon_03(1).jpg">
-
-        </div>
-        <div id="gong" class="ban">
-            <img src="icon_04(1).jpg">
-        </div>
-        <div class="zai" id="gong">
-            <img src="icon_05.jpg">
-        </div>
-        <div class="shu" id="gong">
-            <img src="icon_06.jpg">
-        </div>
-        <div class="vpn" id="gong">
-            <img src="icon_07(1).jpg">
-        </div>
-        <div class="you" id="gong">
-            <img src="icon_08(1).jpg">
-        </div>
-    </div>
-    <div class="meiti">
-        <div  class="meiti_top"  style="width: 100%;height: 20%;  ">
-            <a href="ta4.html" target="mei"> <b style="font-size: large;">媒体北理</b></a><a href="ta5.html" target="mei"> &nbsp;&nbsp;&nbsp;专题报道</a>
-        </div>
-        <!--
-        <div class="meiti_bo">
-            <div class="meiti_bo_top_le" id="meiti_bo_top">
-                1
-            </div>
-            <div class="meiti_bo_top_ri" id="meiti_bo_top">
-                【工信部网】北理工2016年拥军工作圆满...
-            </div>
-            <hr>
-            <div class="meiti_bo_bo_le" id="meiti_bo_bo">
-                2
-            </div>
-            <div class="meiti_bo_bo_ri" id="meiti_bo_bo">
-                【人民网】2016北理工校长护海岩贺新春
-            </div>
-        </div>
-        -->
-        <iframe src="ta4.html" name="mei" style="width: 100%;height:70%; border: hidden;"></iframe>
-
-    </div>
-    <div class="tongzhi">
-        <div class="tongzhi_top">
-            <b style="font-size: large;">通知公告</b>&nbsp;&nbsp;&nbsp;今日新通告1条
-        </div>
-        <div class="tongzhi_bo">
-        <div class="tongzhi_bo_le">
-            2016<br>01-19
-        </div>
-        <div class="tongzhi_bo_ri">
-            关于2016年度国家项目科学基金申请...
-            <br>
-        </div>
-        <hr>
-        <div class="tongzhi_bo_bo_le">
-            2016<br>01-29
-        </div>
-        <div class="tongzhi_bo_bo_ri">
-            关于2016年班车安排的同志（2016年...）
-        </div>
-        </div>
-
-    </div>
     <div class="footer">
-        <div class="left">
-
-            <div class="fo_zaixiao" id="fo_shenfen">
-                在校生
-            </div>
-            <div class="fo_jiaozhi" id="fo_shenfen">
-                教职工
-            </div>
-            <div class="fo_kaosheng" id="fo_bo_shenfen">
-                考&nbsp;生
-            </div>
-            <div class="fo_xiaoyou" id="fo_bo_shenfen">
-                校&nbsp;友
-            </div>
+        <div class="sfdr2">
+            <a class="abg1" href="#">在校生</a>
+            <a class="abg2" href="#">教职工</a>
+            <a class="abg3" href="#">考  生</a>
+            <a class="abg4" href="#">校  友</a>
         </div>
-        <div class="center">
-            <div class="fo_zai" id="fo_shen">
-                领导信箱
-            </div>
-            <div class="fo_jiao" id="fo_shen">
-                招聘信息
-            </div>
-            <div class="fo_kao" id="fo_bo_shen">
-                联系我们
-            </div>
-            <div class="fo_xiao" id="fo_bo_shen">
-                网站地图
-            </div>
+        <div class="fot_link">
+            <a href="#">领导信箱</a>
+            <a href="#">招聘信息</a>
+            <a href="#">联系我们</a>
+            <a href="#">网站地图</a>
         </div>
-        <div class="right">
-            <img src="blue(1).png" style="">
+        <div class="fot_logo">
+            <table><tr>
+        </td>
+                <td><a href="#"> <img src="blue.png"></a></td></tr></table>
         </div>
     </div>
-
-</div>
-<div class="gai" id="nav_er">
-
-</div>
-<div class="gong" id="nav_er">
-
-</div>
-<div class="pei" id="nav_er">
-
-</div>
-<div class="yan" id="nav_er">
-
-</div>
-<div class="dui">
-
-</div>
-<div class="xueshenggong" id="nav_er">
-
-</div>
-<div class="jiu" id="nav_er">
-
-</div>
-<div class="jiao" id="nav_er">
-
-</div>
-<!--<div id="jian" style="position:  top:190px;left: 0px; width:98%;height:35%; margin-left: 1%">
-    <img src="arrows(1).png" style="width: 100%; heigth:100%;">-->
-</div>
 </body>
 </html>
