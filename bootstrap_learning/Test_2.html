@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style type="text/css" >
+        .con{
+            width:100%;
+            margin-top: 100px;
+        }
+    </style>
+    <script type="text/javascript">
+
+        var i=1;
+        var ti=null;
+        function qiehuan()
+
+        {
+            document.getElementById("img").src="img_"+i+".jpg";
+            if(i==3){i=1;}
+            else
+            {i++;}
+        }
+        function init() {
+            ti= setInterval('qiehuan();',1000);
+        }
+        function pause() {
+            clearInterval(ti);
+
+        }
+        function restart() {
+            qiehuan();
+            init();
+        }
+
+        function se() {
+            var newop=document.createElement("p");
+            var textne = document.createTextNode("123");
+            newop.appendChild(textne);
+            document.getElementById("pp").appendChild(newop);
+
+
+        }
+    </script>
+</head>
+<body >
+<div class="con" id="con" onload="init()">
+    <img src="img_1.jpg" style="width: 100%; height: 100%;" id="img" onmouseover="pause()" onmouseout="restart()">
+    <div class="sel" id="sel">
+        <form>
+            <select id="se" class="se">
+                <option value="1">1111</option>
+                <option value="2" selected>2222</option>
+            </select>
+            <input type="button" onclick="se();" value="添加">
+        </form>
+    </div>
+</div>
+<p id="pp">qwerty</p>
+</body>
+</html>
