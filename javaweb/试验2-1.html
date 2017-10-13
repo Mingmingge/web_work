@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2_1</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <style type="text/css">
+        p{
+            color: red;
+            font-size: small;
+        }
+    </style>
+    <script type="text/javascript">
+    $(function () {
+        $("input[name='email']").blur(function () {
+            var email = $(this).val();
+            var len = email.length;
+            if (len == 0) {
+                $("#pemail").html("邮箱不能为空");
+            } else if (len < 6 || len > 10) {
+                $("#pemail").html("长度在6～10");
+            } else {
+                $("#pemail").html("");
+            }
+        })
+        $("input[name = 'pwd']").blur(function () {
+            var pwd = $(this).val();
+            var len = pwd.length;
+            if (len == 0) {
+                $("#ppwd").html("密码不能为空");
+            } else {
+                $("#ppwd").html("");
+            }
+        })
+        $("input[name = 'pwd_2']").blur(function () {
+            var pwd = $("input[name = 'pwd']").val();
+            var pwd_2 = $(this).val();
+            if (pwd_2.length == 0) {
+                $("#ppwd_2").html("请确认密码");
+            } else if (pwd == pwd_2) {
+                $("#ppwd_2").html("");
+            } else {
+                $("#ppwd_2").html("两次密码不一致");
+            }
+        })
+    })
+    </script>
+</head>
+<body>
+<form style="padding-left: 100px;padding-top: 100px;">
+    <table>
+        <tr>
+            <td>邮箱：</td>
+            <td><input type="text" name="email"  placeholder="email"></td>
+            <td><p id="pemail"></p></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" name="pwd" placeholder="password"></td>
+            <td><p id="ppwd"></p></td>
+        </tr>
+        <tr>
+            <td>确认密码：</td>
+            <td><input type="password" name="pwd_2" placeholder="confirm"></td>
+            <td><p id="ppwd_2"></p></td>
+        </tr>
+        <tr>
+            <td>来自城市：</td>
+            <td><input type="text" placeholder="city"></td>
+        </tr>
+        <tr>
+            <td>爱好：</td>
+            <td><input type="text" placeholder="hobby"></td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td>
+                <input name="sex" value="男" type="radio">男&nbsp;&nbsp;
+                <input type="radio" name="sex" >女
+            </td>
+        </tr>
+        <tr>
+            <td>个人介绍：</td>
+            <td>
+
+                <textarea name="">
+
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                &nbsp;&nbsp;&nbsp;
+                <button type="submit" value="确认">确认</button>&nbsp;&nbsp;
+                <button type="reset" value="重置">重置</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

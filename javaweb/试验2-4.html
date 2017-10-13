@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2_4</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("button").click(function () {
+                var str = "I# #a#m# #a# #girl#,# #I# #like# #d#a#n#c#i#n#g#!";
+                //var str = "I am a girl,I like dancing!";
+
+                $("#p1").html(str);
+            })
+        })
+    </script>
+</head>
+<body>
+<p>原字符为：&nbsp;&nbsp;I am a girl, I like dancing!</p><button type="button" >输出</button>
+<p id="p1"></p>
+</body>
+</html>

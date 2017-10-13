@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2_3</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var date = new Date();
+            var hour = date.getHours();
+            if (hour >= 6 && hour <= 12) {
+                $("#p1").html("早上好");
+            } else if (hour > 12 && hour <=18) {
+                $("#p1").html("下午好");
+            } else if (hour >18 && hour <= 24) {
+                $("#p1").html("晚上好");
+            } else {
+                $("#p1").html("凌晨好");
+            }
+
+
+        })
+    </script>
+</head>
+<body>
+<p id="p1"></p>
+</body>
+</html>
